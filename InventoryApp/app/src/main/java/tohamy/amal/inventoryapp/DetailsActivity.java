@@ -103,7 +103,7 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
         subtractIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (quantity == 1) {
+                if (quantity == 0) {
                     Toast.makeText(DetailsActivity.this, getString(R.string.quantity_cant_be_minus), Toast.LENGTH_SHORT).show();
                     return;
                 }

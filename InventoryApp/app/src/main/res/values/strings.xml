@@ -37,11 +37,13 @@
     <string name="edit">edit</string>
     <string name="contact">contact</string>
     <string name="quantity_limit">"Quantity can't be more than 1000</string>
-    <string name="quantity_cant_be_minus">quantity can\'t be less than 1</string>
+    <string name="quantity_cant_be_minus">quantity can\'t be less than 0</string>
     <string name="missing_product_name">Product name is required</string>
     <string name="missing_price">Price is required</string>
     <string name="missing_quantity">Quantity is required</string>
     <string name="missing_supplier_name">Supplier name is required</string>
+    <string name="missing_phone_number">Phone number is required</string>
     <string name="phone_number_is_not_provided">Phone number is not provided</string>
     <string name="details">Details</string>
+    <string name="sale">Sale</string>
 </resources>

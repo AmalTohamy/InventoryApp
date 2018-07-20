@@ -129,6 +129,11 @@ public class ProductProvider extends android.content.ContentProvider {
             throw new IllegalArgumentException("Product requires a supplier name");
         }
 
+        String phoneNumber = values.getAsString(ProductContract.ProductEntry.COLUMN_PRODUCT_SUPPLIER_PHONE_NUMBER);
+        if (phoneNumber == null) {
+            throw new IllegalArgumentException("Supplier phone number is required");
+        }
+
         // Get writeable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
@@ -204,6 +209,13 @@ public class ProductProvider extends android.content.ContentProvider {
             String supplierName = values.getAsString(ProductContract.ProductEntry.COLUMN_PRODUCT_SUPPLIER_NAME);
             if (supplierName == null) {
                 throw new IllegalArgumentException("Product requires a supplier name");
+            }
+        }
+
+        if (values.containsKey(ProductContract.ProductEntry.COLUMN_PRODUCT_SUPPLIER_PHONE_NUMBER)) {
+            String phoneNumber = values.getAsString(ProductContract.ProductEntry.COLUMN_PRODUCT_SUPPLIER_PHONE_NUMBER);
+            if (phoneNumber == null) {
+                throw new IllegalArgumentException("Supplier phone number is required");
             }
         }
 

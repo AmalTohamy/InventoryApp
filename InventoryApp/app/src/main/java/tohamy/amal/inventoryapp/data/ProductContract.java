@@ -18,6 +18,7 @@ public final class ProductContract {
      */
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
     public static final String PATH_PRODUCT = "product";
+
     // To prevent someone from accidentally instantiating the contract class,
     // give it an empty constructor.
     private ProductContract() {

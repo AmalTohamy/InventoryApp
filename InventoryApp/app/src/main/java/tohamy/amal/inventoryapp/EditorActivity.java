@@ -142,6 +142,11 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             return;
         }
 
+        if (TextUtils.isEmpty(phoneNumberString)) {
+            mSupplierNameEditText.setError(getString(R.string.missing_phone_number));
+            return;
+        }
+
         // Create a ContentValues object where column names are the keys,
         // and product attributes from the editor are the values.
         ContentValues contentValues = new ContentValues();
