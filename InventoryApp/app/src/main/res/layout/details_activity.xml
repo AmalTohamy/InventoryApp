@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/product_name_" />
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/value_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/price_" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/value_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/quantity_" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/add_icon"
+                style="@style/icon_style"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_add_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                style="@style/value_style"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/subtract_icon"
+                style="@style/icon_style"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_remove_circle_black_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/supplier_name_" />
+
+        <TextView
+            android:id="@+id/supplier_name"
+            style="@style/value_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/supplier_phone_" />
+
+        <TextView
+            android:id="@+id/supplier_phone_number"
+            style="@style/value_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/edit_button"
+            style="@style/button_style"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/delete_button"
+            style="@style/button_style"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/contact_button"
+            style="@style/button_style"
+            android:text="@string/contact" />
+
+    </LinearLayout>
+
+</LinearLayout>
